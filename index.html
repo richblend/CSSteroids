@@ -1,0 +1,95 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="js/libs/prefixfree.js"></script>
+  <title>CSSteroids</title>
+  
+  <meta property="og:title" content="CSSteroids" />
+<meta property="og:type" content="game" />
+<meta property="og:url" content="http://www.richsavage.co.uk/labs/cssteroids/" />
+<meta property="og:image" content="http://www.richsavage.co.uk/labs/cssteroids/img/75x75.jpg" />
+<meta property="og:site_name" content="CSSteroids" />
+<meta property="fb:admins" content="513862777" />
+</head>
+
+<body>
+	
+    <div id="tweet">
+    	<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    
+	<div id="fbLike">
+    	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.richsavage.co.uk%2Flabs%2Fcssteroids&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=192063787568755" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+    </div>
+	
+    <div id="test1" style="position: absolute; background: red; width: 2px; height: 2px;"></div>
+    
+    
+    <div id="gameScreen"></div>
+    <div class="lives"> 
+        <div class="life1 life"><div class="ship sprite lifeShip"><div class="left asPoly"></div><div class="right asPoly"></div><div class="bottom asPoly"></div></div></div>
+        <div class="life2 life"><div class="ship sprite lifeShip"><div class="left asPoly"></div><div class="right asPoly"></div><div class="bottom asPoly"></div></div></div>
+        <div class="life3 life"><div class="ship sprite lifeShip"><div class="left asPoly"></div><div class="right asPoly"></div><div class="bottom asPoly"></div></div></div>
+    </div>
+    <div class="score">0</div>
+    
+    
+    <div id="introScreen">
+        <h1>CSSTEROIDS</h1>
+        <a href="#">PLAY GAME</a>
+        <p>Pure CSS/Javascript. Just for the lulz. Only tested in Webkit.</p>
+    </div>
+   
+    <div id="gameOverScreen" style="display: none;">
+        <h1>GAME OVER</h1>
+        <p class="finalScore">0</p>
+        <a href="#">PLAY AGAIN</a>
+    </div>
+
+    
+  
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <script> // Change UA-XXXXX-X to be your site's ID
+    window._gaq = [['_setAccount','UA-510067-5'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
